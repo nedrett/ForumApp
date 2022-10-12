@@ -20,5 +20,9 @@
         [Required]
         [MaxLength(ContentMaxLength)]
         public string Content { get; set; } = null!;
+
+        [Comment("Marks record as deleted")]
+        [Required]
+        public bool IsDeleted{ get; set; } = false;
     }
 }
