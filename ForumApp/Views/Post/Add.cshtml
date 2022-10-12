@@ -1,7 +1,6 @@
-﻿@model PostViewModel
-
+﻿@model AddPostViewModel
 @{
-    ViewData["Title"] = "Edit Post";
+    ViewData["Title"] = "Add new Post";
 }
 
 <h2 class="text-center">@ViewData["Title"]</h2>
@@ -9,7 +8,6 @@
 
 <div class="row">
     <form method="post">
-        <input type="hidden" asp-for="@Model.Id" />
         <div class="form-group">
             <div class="mb-3">
                 <label asp-for="Title"></label>
@@ -22,7 +20,7 @@
                 <span asp-validation-for="@Model.Content" class="small text-danger"></span>
             </div>
         </div>
-        <input class="btn btn-primary mt-3" type="submit" value="Submit" />
+        <input class="btn btn-primary mt-3" type="submit" value="Create" />
     </form>
 </div>
 
